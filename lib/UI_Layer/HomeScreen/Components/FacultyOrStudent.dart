@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:kamaranacademy/Login/LoginScreen.dart';
+import 'package:kamaranacademy/UI_Layer/Login/LoginScreen.dart';
 import 'package:kamaranacademy/constants.dart';
 
 class FacultyOrStudent extends StatelessWidget {

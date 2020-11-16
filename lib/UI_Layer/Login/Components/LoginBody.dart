@@ -2,9 +2,15 @@ import 'package:flutter/material.dart';
 import 'LoginformCredentials.dart';
 import 'WelcomeBack.dart';
 
-class LoginBody extends StatelessWidget {
+class LoginBody extends StatefulWidget {
   LoginBody(this.loginOf);
   final String loginOf;
+
+  @override
+  _LoginBodyState createState() => _LoginBodyState();
+}
+
+class _LoginBodyState extends State<LoginBody> {
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(
@@ -13,15 +19,16 @@ class LoginBody extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         mainAxisAlignment: MainAxisAlignment.start,
         children: [
-          WelcomeBack(loginOf: this.loginOf),
+          WelcomeBack(loginOf: this.widget.loginOf),
           //------------------------------------------------------------------//
           Container(
             color: Colors.deepOrange,
             width: MediaQuery.of(context).size.width * 0.9,
-            padding: EdgeInsets.symmetric(horizontal: 60, vertical: 20),
-            child: InputCredentials(),
+            padding: EdgeInsets.symmetric(horizontal: 50, vertical: 20),
+            child: InputCredentials(loginOf: this.widget.loginOf),
           ),
           //------------------------------------------------------------------//
+
           SizedBox(height: 30),
           Center(
             child: Text(

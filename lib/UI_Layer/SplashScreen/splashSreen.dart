@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
-import 'package:kamaranacademy/HomeScreen/homeScreen.dart';
+import 'package:kamaranacademy/UI_Layer/HomeScreen/homeScreen.dart';
 
 class SplashScreen extends StatefulWidget {
   @override

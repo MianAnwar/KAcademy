@@ -1,12 +1,17 @@
 import 'package:flutter/material.dart';
-import 'package:kamaranacademy/HomeScreen/homeScreen.dart';
+import 'package:kamaranacademy/UI_Layer/HomeScreen/homeScreen.dart';
 import 'package:kamaranacademy/constants.dart';
 import 'Components/LoginBody.dart';
 
-class LoginScreen extends StatelessWidget {
+class LoginScreen extends StatefulWidget {
   LoginScreen(this.loginOf);
   final String loginOf;
 
+  @override
+  _LoginScreenState createState() => _LoginScreenState();
+}
+
+class _LoginScreenState extends State<LoginScreen> {
   @override
   Widget build(BuildContext context) {
     return WillPopScope(
@@ -25,7 +30,7 @@ class LoginScreen extends StatelessWidget {
       child: Scaffold(
         backgroundColor: mPrimaryColor,
         appBar: loginAppBar(context),
-        body: LoginBody(loginOf),
+        body: LoginBody(widget.loginOf),
       ),
     );
   }
