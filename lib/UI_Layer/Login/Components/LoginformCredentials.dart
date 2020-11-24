@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:kamaranacademy/Logic_Layer/LogicLayerFunctionality.dart';
 import 'package:kamaranacademy/Objects_Layer/LoginCredentials.dart';
-import 'package:kamaranacademy/UI_Layer/Dashboard/AdminDashboard.dart';
+import 'package:kamaranacademy/UI_Layer/Dashboard/AdminDashboard/AdminDashboard.dart';
 import 'package:kamaranacademy/UI_Layer/Dashboard/FacultyDashboard.dart';
 import 'package:kamaranacademy/UI_Layer/Dashboard/StudentDashboard.dart';
 
@@ -236,7 +236,7 @@ class _InputCredentialsState extends State<InputCredentials> {
       style: TextStyle(color: Colors.white, fontSize: fsize),
       //-------------------------------------------------------------//
       inputFormatters: [FilteringTextInputFormatter.digitsOnly],
-      keyboardType: TextInputType.number,
+      keyboardType: TextInputType.phone,
       //-------------------------------------------------------------//
       decoration: InputDecoration(
         hintText: "03211234567",

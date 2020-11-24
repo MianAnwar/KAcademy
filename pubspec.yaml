@@ -81,6 +81,10 @@ flutter:
     - family: RobotoBold
       fonts:
         - asset: fonts/RobotoBold.ttf
+
+    - family: Ubuntu-Light
+      fonts:
+        - asset: fonts/Ubuntu-Light.ttf
   #       - asset: fonts/Schyler-Italic.ttf
   #         style: italic
   #   - family: Trajan Pro

@@ -9,3 +9,5 @@ Color mPrimaryTextColor = Colors.brown;
 Color m2BorderColor = Colors.blueGrey;
 
 Color mySecondTextColor = Colors.white;
+
+String fontName = "Ubuntu-Light";
